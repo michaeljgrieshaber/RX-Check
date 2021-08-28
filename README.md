@@ -1,18 +1,190 @@
-# Project-1
+# RX-Check
 
 # Project Overview
 
 ## Project Name
 
-The name of your project.
+RX-Check
 
 ## Project Description
 
-Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and\or functionality.
+The site will allow users to search for and get information on medications.
 
 ## API and Data Sample
 
-Specify the API you are using and include a link. Show us a snippet of JSON returned by your API so we know you can access it and get the info you need
+The site will use the openFDA API.
+https://open.fda.gov/apis/drug/drugsfda/
+
+JSON snippit:
+{
+    "meta": {
+        "disclaimer": "Do not rely on openFDA to make decisions regarding medical care. While we make every effort to ensure that data is accurate, you should assume all results are unvalidated. We may limit or otherwise restrict your access to the API in line with our Terms of Service.",
+        "terms": "https://open.fda.gov/terms/",
+        "license": "https://open.fda.gov/license/",
+        "last_updated": "2021-08-04",
+        "results": {
+            "skip": 0,
+            "limit": 1,
+            "total": 10190
+        }
+    },
+    "results": [
+        {
+            "reporttype": "1",
+            "safetyreportversion": "4",
+            "receivedateformat": "102",
+            "primarysource": {
+                "reportercountry": "US",
+                "qualification": "5"
+            },
+            "transmissiondateformat": "102",
+            "fulfillexpeditecriteria": "1",
+            "safetyreportid": "10013586",
+            "patient": {
+                "patientsex": "1",
+                "reaction": [
+                    {
+                        "reactionmeddraversionpt": "17.1",
+                        "reactionmeddrapt": "Arrhythmia",
+                        "reactionoutcome": "6"
+                    }
+                ],
+                "drug": [
+                    {
+                        "drugcharacterization": "1",
+                        "medicinalproduct": "SUDAFED",
+                        "drugdosageform": "Unspecified",
+                        "drugadministrationroute": "048",
+                        "actiondrug": "5",
+                        "drugrecurreadministration": "3",
+                        "activesubstance": {
+                            "activesubstancename": "PSEUDOEPHEDRINE HYDROCHLORIDE"
+                        },
+                        "openfda": {
+                            "application_number": [
+                                "NDA020021"
+                            ],
+                            "brand_name": [
+                                "SUDAFED 24 HOUR"
+                            ],
+                            "generic_name": [
+                                "PSEUDOEPHEDRINE HYDROCHLORIDE"
+                            ],
+                            "manufacturer_name": [
+                                "Johnson & Johnson Consumer Inc., McNeil Consumer Healthcare Division"
+                            ],
+                            "product_ndc": [
+                                "50580-669"
+                            ],
+                            "product_type": [
+                                "HUMAN OTC DRUG"
+                            ],
+                            "route": [
+                                "ORAL"
+                            ],
+                            "substance_name": [
+                                "PSEUDOEPHEDRINE HYDROCHLORIDE"
+                            ],
+                            "rxcui": [
+                                "1049670",
+                                "1049672"
+                            ],
+                            "spl_id": [
+                                "6a06fbd9-c10d-43a4-9a6e-be1720992624"
+                            ],
+                            "spl_set_id": [
+                                "9991599a-b49b-4ea6-a6e1-c05f0c992f71"
+                            ],
+                            "package_ndc": [
+                                "50580-669-10"
+                            ],
+                            "unii": [
+                                "6V9V2RYJ8N"
+                            ]
+                        }
+                    },
+                    {
+                        "drugcharacterization": "1",
+                        "medicinalproduct": "SUDAFED",
+                        "drugauthorizationnumb": "020021",
+                        "drugdosageform": "Unspecified",
+                        "drugadministrationroute": "048",
+                        "drugindication": "PRODUCT USED FOR UNKNOWN INDICATION",
+                        "actiondrug": "5",
+                        "drugrecurreadministration": "3",
+                        "activesubstance": {
+                            "activesubstancename": "PSEUDOEPHEDRINE HYDROCHLORIDE"
+                        },
+                        "openfda": {
+                            "application_number": [
+                                "NDA020021"
+                            ],
+                            "brand_name": [
+                                "SUDAFED 24 HOUR"
+                            ],
+                            "generic_name": [
+                                "PSEUDOEPHEDRINE HYDROCHLORIDE"
+                            ],
+                            "manufacturer_name": [
+                                "Johnson & Johnson Consumer Inc., McNeil Consumer Healthcare Division"
+                            ],
+                            "product_ndc": [
+                                "50580-669"
+                            ],
+                            "product_type": [
+                                "HUMAN OTC DRUG"
+                            ],
+                            "route": [
+                                "ORAL"
+                            ],
+                            "substance_name": [
+                                "PSEUDOEPHEDRINE HYDROCHLORIDE"
+                            ],
+                            "rxcui": [
+                                "1049670",
+                                "1049672"
+                            ],
+                            "spl_id": [
+                                "6a06fbd9-c10d-43a4-9a6e-be1720992624"
+                            ],
+                            "spl_set_id": [
+                                "9991599a-b49b-4ea6-a6e1-c05f0c992f71"
+                            ],
+                            "package_ndc": [
+                                "50580-669-10"
+                            ],
+                            "unii": [
+                                "6V9V2RYJ8N"
+                            ]
+                        }
+                    }
+                ]
+            },
+            "serious": "1",
+            "reportduplicate": {
+                "duplicatesource": "MCNEIL",
+                "duplicatenumb": "US-JNJFOC-20140302429"
+            },
+            "receiptdate": "20140824",
+            "receiptdateformat": "102",
+            "receiver": {
+                "receivertype": "6",
+                "receiverorganization": "FDA"
+            },
+            "companynumb": "US-JNJFOC-20140302429",
+            "occurcountry": "US",
+            "seriousnessother": "1",
+            "duplicate": "1",
+            "sender": {
+                "sendertype": "2",
+                "senderorganization": "FDA-Public Use"
+            },
+            "receivedate": "20140315",
+            "transmissiondate": "20150326",
+            "primarysourcecountry": "US"
+        }
+    ]
+}
 
 ## Wireframes
 
