@@ -188,10 +188,8 @@ JSON snippit:
 
 ## Wireframes
 
-Upload images of your wireframes to an image hosting site or add them to an assets folder in your repo and link them here with a description of each specific wireframe.
-
-https://wireframe.cc/pro/edit/467302
-
+Link to wireframe: https://wireframe.cc/pro/edit/467302
+Wireframe image is also in the repo.
 
 
 ### MVP/PostMVP
@@ -199,37 +197,44 @@ https://wireframe.cc/pro/edit/467302
 The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
 
 #### MVP 
-*These are examples only. Replace with your own MVP features.*
 
-- Find and use external api 
-- Render data on page 
-- Allow user to choose favorites 
+- Find API with accessable and useful data
+- Get data on page when searched
+- Create search feature
+- Design site to look like medication bottle
+- Set up breakpoints between desktop and mobile users
+- Include warnings so the user seeks medical help instead of relying on site only
+
 
 #### PostMVP  
-*These are examples only. Replace with your own Post-MVP features.*
 
-- Add second API
-- Use local storage to save user favorites
+- Upgrade with images of medications using additinal API
+- Add an on-screen calculator/unit converter
+- Create a save/favorite medication section
+- Include a section to with recent news on searched medications
+
+
 
 ## Project Schedule
 
-This schedule will be used to keep track of your progress throughout the week and align with our expectations.  
 
-You are **responsible** for scheduling time with your squad to seek approval for each deliverable by the end of the corresponding day, excluding `Saturday` and `Sunday`.
 
 |  Day | Deliverable | Status
-|---|---| ---|
-|July 10-12| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
-|July 13| Project Approval | Incomplete
-|July 13| Core Application Structure (HTML, CSS, etc.) | Incomplete
-|July 14| Pseudocode / actual code | Incomplete
-|July 15| Initial Clickable Model  | Incomplete
-|July 16| MVP | Incomplete
-|July 17| Presentations | Incomplete
+|--- |---| ---|
+|8/29/21| Work on project approval README | Incomplete
+|8/30/21| Get project approved / Begin layout (HTML,CSS,JS) | Incomplete
+|8/31/21| Pseudocode / actual code  | Incomplete
+|9/01/21| Actual code | Incomplete
+|9/02/21| Actual code / Post-MVP | Incomplete
+|9/03/21| Presentation  | Incomplete
+|9/04/21+| Post-MVP | Incomplete
+
 
 ## Priority Matrix
 
 Include a full list of features that have been prioritized based on the `Time and Importance` Matrix.  Link this image in a similar manner to your wireframes
+
+https://wireframe.cc/pro/edit/467412
 
 ## Timeframes
 
@@ -254,4 +259,9 @@ function reverse(string) {
 ```
 
 ## Change Log
- Use this section to document what changes were made and the reasoning behind those changes.  
+ | Change | Reason ||||
+| --- | :---: |  :---: | :---: | :---: |
+|  | |  
+
+
+
