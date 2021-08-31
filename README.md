@@ -16,7 +16,8 @@ The site will use the openFDA API.
 https://open.fda.gov/apis/drug/drugsfda/
 
 JSON snippit:
-{
+
+```JSON{
     "meta": {
         "disclaimer": "Do not rely on openFDA to make decisions regarding medical care. While we make every effort to ensure that data is accurate, you should assume all results are unvalidated. We may limit or otherwise restrict your access to the API in line with our Terms of Service.",
         "terms": "https://open.fda.gov/terms/",
@@ -185,18 +186,18 @@ JSON snippit:
         }
     ]
 }
+```
 
 ## Wireframes
 
 Link to wireframe: https://wireframe.cc/pro/edit/467302
 Wireframe image is also in the repo.
 
-
 ### MVP/PostMVP
 
-The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
+The functionality will then be divided into two separate lists: MPV and PostMVP. Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.
 
-#### MVP 
+#### MVP
 
 - Find API with accessable and useful data
 - Get data on page when searched
@@ -205,34 +206,28 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 - Set up breakpoints between desktop and mobile users
 - Include warnings so the user seeks medical help instead of relying on site only
 
-
-#### PostMVP  
+#### PostMVP
 
 - Upgrade with images of medications using additinal API
 - Add an on-screen calculator/unit converter
 - Create a save/favorite medication section
 - Include a section to with recent news on searched medications
 
-
-
 ## Project Schedule
 
-
-
-|  Day | Deliverable | Status
-|--- |---| ---|
-|8/29/21| Work on project approval README | Incomplete
-|8/30/21| Get project approved / Begin layout (HTML,CSS,JS) | Incomplete
-|8/31/21| Pseudocode / actual code  | Incomplete
-|9/01/21| Actual code | Incomplete
-|9/02/21| Actual code / Post-MVP | Incomplete
-|9/03/21| Presentation  | Incomplete
-|9/04/21+| Post-MVP | Incomplete
-
+| Day      | Deliverable                                       | Status     |
+| -------- | ------------------------------------------------- | ---------- |
+| 8/29/21  | Work on project approval README                   | Incomplete |
+| 8/30/21  | Get project approved / Begin layout (HTML,CSS,JS) | Incomplete |
+| 8/31/21  | Pseudocode / actual code                          | Incomplete |
+| 9/01/21  | Actual code                                       | Incomplete |
+| 9/02/21  | Actual code / Post-MVP                            | Incomplete |
+| 9/03/21  | Presentation                                      | Incomplete |
+| 9/04/21+ | Post-MVP                                          | Incomplete |
 
 ## Priority Matrix
 
-Include a full list of features that have been prioritized based on the `Time and Importance` Matrix.  Link this image in a similar manner to your wireframes
+Include a full list of features that have been prioritized based on the `Time and Importance` Matrix. Link this image in a similar manner to your wireframes
 
 https://wireframe.cc/pro/edit/467412
 
@@ -240,28 +235,28 @@ https://wireframe.cc/pro/edit/467412
 
 Tell us how long you anticipate spending on each area of development. Be sure to consider how many hours a day you plan to be coding and how many days you have available until presentation day.
 
-Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe. Throughout your project, keep track of your Time Invested and Actual Time and update your README regularly.
+Time frames are also key in the development cycle. You have limited time to code all phases of the game. Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe. Throughout your project, keep track of your Time Invested and Actual Time and update your README regularly.
 
-| Component | Priority | Estimated Time | Time Invested | Actual Time |
-| --- | :---: |  :---: | :---: | :---: |
-| HTML Layout   | H | 3hrs| Xhrs | Xhrs |
-| CSS Mobile Layout  | H | 3hrs| Xhrs | Xhrs |
-| CSS Desktop Layout  | H | 3hrs| Xhrs | Xhrs |
-| CSS Desktop Layout  | H | 3hrs| Xhrs | Xhrs |
-| Search feature Brand  | H | 3hrs| Xhrs | Xhrs |
-| Search feature Generic  | H | 3hrs| Xhrs | Xhrs |
-| Search feature Usage  | H | 3hrs| Xhrs | Xhrs |
-| Search feature Side Effect  | H | 3hrs| Xhrs | Xhrs |
-| Search feature Date | H | 3hrs| Xhrs | Xhrs |
-| Search feature Manufacturer  | H | 3hrs| Xhrs | Xhrs |
-| Search feature Manufacturer  | H | 3hrs|Xhrs | Xhrs | 
-| Alert  | M | 1.5hrs| Xhrs | Xhrs |
-| CSS Finishing touches  | M | 3hrs| Xhrs | Xhrs |
-| Total  | H | 37.5hrs| Xhrs | Xhrs |
+| Component                   | Priority | Estimated Time | Time Invested | Actual Time |
+| --------------------------- | :------: | :------------: | :-----------: | :---------: |
+| HTML Layout                 |    H     |      3hrs      |     Xhrs      |    Xhrs     |
+| CSS Mobile Layout           |    H     |      3hrs      |     Xhrs      |    Xhrs     |
+| CSS Desktop Layout          |    H     |      3hrs      |     Xhrs      |    Xhrs     |
+| CSS Desktop Layout          |    H     |      3hrs      |     Xhrs      |    Xhrs     |
+| Search feature Brand        |    H     |      3hrs      |     Xhrs      |    Xhrs     |
+| Search feature Generic      |    H     |      3hrs      |     Xhrs      |    Xhrs     |
+| Search feature Usage        |    H     |      3hrs      |     Xhrs      |    Xhrs     |
+| Search feature Side Effect  |    H     |      3hrs      |     Xhrs      |    Xhrs     |
+| Search feature Date         |    H     |      3hrs      |     Xhrs      |    Xhrs     |
+| Search feature Manufacturer |    H     |      3hrs      |     Xhrs      |    Xhrs     |
+| Search feature Manufacturer |    H     |      3hrs      |     Xhrs      |    Xhrs     |
+| Alert                       |    M     |     1.5hrs     |     Xhrs      |    Xhrs     |
+| CSS Finishing touches       |    M     |      3hrs      |     Xhrs      |    Xhrs     |
+| Total                       |    H     |    37.5hrs     |     Xhrs      |    Xhrs     |
 
 ## Code Snippet
 
-Use this section to include a brief code snippet of functionality that you are proud of and a brief description.  
+Use this section to include a brief code snippet of functionality that you are proud of and a brief description.
 
 ```
 function reverse(string) {
@@ -270,9 +265,7 @@ function reverse(string) {
 ```
 
 ## Change Log
- | Change | Reason ||||
-| --- | :---: |  :---: | :---: | :---: |
-|  | |  
 
-
-
+| Change | Reason |     |     |     |
+| ------ | :----: | :-: | :-: | :-: |
+|        |        |
