@@ -249,10 +249,9 @@ Time frames are also key in the development cycle. You have limited time to code
 | Search feature Side Effect  |    H     |      3hrs      |     Xhrs      |    Xhrs     |
 | Search feature Date         |    H     |      3hrs      |     Xhrs      |    Xhrs     |
 | Search feature Manufacturer |    H     |      3hrs      |     Xhrs      |    Xhrs     |
-| Search feature Manufacturer |    H     |      3hrs      |     Xhrs      |    Xhrs     |
 | Alert                       |    M     |     1.5hrs     |     Xhrs      |    Xhrs     |
 | CSS Finishing touches       |    M     |      3hrs      |     Xhrs      |    Xhrs     |
-| Total                       |    H     |    37.5hrs     |     Xhrs      |    Xhrs     |
+| Total                       |    H     |    34.5hrs     |     Xhrs      |    Xhrs     |
 
 ## Code Snippet
 
