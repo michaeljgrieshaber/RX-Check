@@ -1,22 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <title>RX Check</title>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css.css">
+  <script defer src="./js.js"></script>
+  <script defer src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <title>Document</title>
 </head>
 <body>
   <div></div>
   <p id=>RX Check</p>
-  <p>Enter Name:</p>
-  <button id="search">Search Prescription</button>
+  <input type="text" placeholder="Type Prescription Here" id="user-input">
+  <button onclick="getUserInput()" id="search">Search Prescription</button>
   <p>Name Brand:</p>
+  <p id="name-brand-result"></p>
   <p>Name Generic:</p>
+  <p id="name-generic-result"></p>
   <p>Usage:</p>
+  <p id="usage-result"></p>
   <p>Side Effects:</p>
+  <p id="side-effects-result"></p>
   <p>Date Available:</p>
+  <p id="date-available-result"></p>
   <p>Manufacturer:</p>
+  <p id="manufacturer-result"></p>
 
 </body>
 </html>
