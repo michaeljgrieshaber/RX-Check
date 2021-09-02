@@ -2,7 +2,7 @@
 const URL = "https://api.fda.gov/drug/event.json?api_key=";
 const API_Key = "IKBoKPvacjAy2yH0yYSHQUldCTmPaC1AMa6SPpgL";
 let userInput = document.querySelector("#user-input");
-console.log(userInput);
+// console.log(userInput);
 const URLandKey = `https://api.fda.gov/drug/event.json?api_key=${API_Key}&search=`;//${userInput}`;
 
 
