@@ -217,10 +217,10 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 
 | Day      | Deliverable                                       | Status     |
 | -------- | ------------------------------------------------- | ---------- |
-| 8/29/21  | Work on project approval README                   | Incomplete |
-| 8/30/21  | Get project approved / Begin layout (HTML,CSS,JS) | Incomplete |
-| 8/31/21  | Pseudocode / actual code                          | Incomplete |
-| 9/01/21  | Actual code                                       | Incomplete |
+| 8/29/21  | Work on project approval README                   | complete   |
+| 8/30/21  | Get project approved / Begin layout (HTML,CSS,JS) | complete   |
+| 8/31/21  | Pseudocode / actual code                          | complete   |
+| 9/01/21  | Actual code                                       | complete   |
 | 9/02/21  | Actual code / Post-MVP                            | Incomplete |
 | 9/03/21  | Presentation                                      | Incomplete |
 | 9/04/21+ | Post-MVP                                          | Incomplete |
@@ -233,38 +233,45 @@ https://wireframe.cc/pro/edit/467412
 
 ## Timeframes
 
-Tell us how long you anticipate spending on each area of development. Be sure to consider how many hours a day you plan to be coding and how many days you have available until presentation day.
-
-Time frames are also key in the development cycle. You have limited time to code all phases of the game. Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe. Throughout your project, keep track of your Time Invested and Actual Time and update your README regularly.
-
 | Component                   | Priority | Estimated Time | Time Invested | Actual Time |
 | --------------------------- | :------: | :------------: | :-----------: | :---------: |
-| HTML Layout                 |    H     |      3hrs      |     Xhrs      |    Xhrs     |
-| CSS Mobile Layout           |    H     |      3hrs      |     Xhrs      |    Xhrs     |
-| CSS Desktop Layout          |    H     |      3hrs      |     Xhrs      |    Xhrs     |
-| CSS Desktop Layout          |    H     |      3hrs      |     Xhrs      |    Xhrs     |
-| Search feature Brand        |    H     |      3hrs      |     Xhrs      |    Xhrs     |
-| Search feature Generic      |    H     |      3hrs      |     Xhrs      |    Xhrs     |
-| Search feature Usage        |    H     |      3hrs      |     Xhrs      |    Xhrs     |
-| Search feature Side Effect  |    H     |      3hrs      |     Xhrs      |    Xhrs     |
-| Search feature Date         |    H     |      3hrs      |     Xhrs      |    Xhrs     |
-| Search feature Manufacturer |    H     |      3hrs      |     Xhrs      |    Xhrs     |
-| Alert                       |    M     |     1.5hrs     |     Xhrs      |    Xhrs     |
-| CSS Finishing touches       |    M     |      3hrs      |     Xhrs      |    Xhrs     |
-| Total                       |    H     |    34.5hrs     |     Xhrs      |    Xhrs     |
+| HTML Layout                 |    H     |      3hrs      |     3hrs      |    3hrs     |
+| CSS Mobile Layout           |    H     |      3hrs      |     3hrs      |    3hrs     |
+| CSS Desktop Layout          |    H     |      3hrs      |     3hrs      |    3hrs     |
+| CSS Desktop Layout          |    H     |      3hrs      |     3hrs      |    3hrs     |
+| Search feature Brand        |    H     |      3hrs      |     3hrs      |    3hrs     |
+| Search feature Generic      |    H     |      3hrs      |     3hrs      |    3hrs     |
+| Search feature Usage        |    H     |      3hrs      |     3hrs      |    3hrs     |
+| Search feature Side Effect  |    H     |      3hrs      |     3hrs      |    3hrs     |
+| Search feature Date         |    H     |      3hrs      |     3hrs      |    3hrs     |
+| Search feature Manufacturer |    H     |      3hrs      |     3hrs      |    3hrs     |
+| Alert                       |    M     |     1.5hrs     |    0.5hrs     |   0.5hrs    |
+| CSS Finishing touches       |    M     |      3hrs      |     0hrs      |    0hrs     |
+| Total                       |    H     |    34.5hrs     |    30.5hrs    |   30.5hrs   |
 
 ## Code Snippet
 
-Use this section to include a brief code snippet of functionality that you are proud of and a brief description.
+This API had a rather long path to get the data I wanted to display. Additionally, the paths didn't seem to get set up the same for some of the medications causing errors when trying to find it.
 
 ```
-function reverse(string) {
-	// here is the code to reverse a string of text
-}
+   let textBrand = document.createTextNode(res.data.results[0].patient.drug[0].openfda.brand_name[0] ? res.data.results[0].patient.drug[0].openfda.brand_name[0] : "no data" );
+    brand.appendChild(textBrand);
+
+    let textGeneric = document.createTextNode(res.data.results[0].patient.drug[0].openfda.generic_name[0] ? res.data.results[0].patient.drug[0].openfda.generic_name[0] : "no data" );
+    generic.appendChild(textGeneric);
+
+    let textIndication = document.createTextNode(res.data.results[0].patient.drug[0].drugindication ? res.data.results[0].patient.drug[0].drugindication : "no data" );
+    indication.appendChild(textIndication);
+
+    let textReaction = document.createTextNode(res.data.results[0].patient.reaction[0].reactionmeddrapt ? res.data.results[0].patient.reaction[0].reactionmeddrapt : "no data" );
+    reaction.appendChild(textReaction);
+
+    let textManufacturer = document.createTextNode(res.data.results[0].patient.drug[0].openfda.manufacturer_name[0] ? res.data.results[0].patient.drug[0].openfda.manufacturer_name[0] : "no data" );
+    manufacturer.appendChild(textManufacturer);
 ```
 
 ## Change Log
 
-| Change | Reason |     |     |     |
-| ------ | :----: | :-: | :-: | :-: |
-|        |        |
+| Change                                |                                            Reason                                            |     |     |     |
+| ------------------------------------- | :------------------------------------------------------------------------------------------: | :-: | :-: | :-: |
+| Removed date medication was avaliable | API had dates but they ended up not being the origional date the medications were avaliable. |
