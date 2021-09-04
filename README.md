@@ -10,6 +10,8 @@ RX-Check
 
 The site will allow users to search for and get information on medications.
 
+[Link to my site.](https://michaeljgrieshaber.github.io/RX-Check/)
+
 ## API and Data Sample
 
 The site will use the openFDA API.
