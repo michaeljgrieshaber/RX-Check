@@ -6,7 +6,6 @@ let userInput = document.querySelector("#user-input");
 const URLandKey = `https://api.fda.gov/drug/event.json?api_key=${API_Key}&search=`;//${userInput}`;
 
 
-
 let brand = document.getElementById("name-brand-result");
 let indication = document.getElementById("usage-result");
 let generic = document.getElementById("name-generic-result");
@@ -34,8 +33,12 @@ async function searchRX() {
  
     clearData();
 
-    let textBrand = document.createTextNode(res.data.results[0].patient.drug[0].openfda.brand_name[0] ? res.data.results[0].patient.drug[0].openfda.brand_name[0] : "no data" );
+    // let textBrand = document.createTextNode(res.data.results[0].patient.drug[0].openfda.brand_name[0] ? res.data.results[0].patient.drug[0].openfda.brand_name[0] : "no data" );
+    // brand.appendChild(textBrand);
+
+    let textBrand = document.createTextNode(res.data.results[0].patient.drug[0].medicinalproduct ? res.data.results[0].patient.drug[0].medicinalproduct : "no data" );
     brand.appendChild(textBrand);
+
 
     let textGeneric = document.createTextNode(res.data.results[0].patient.drug[0].openfda.generic_name[0] ? res.data.results[0].patient.drug[0].openfda.generic_name[0] : "no data" );
     generic.appendChild(textGeneric);
@@ -56,3 +59,9 @@ async function searchRX() {
     console.log(error);
   }
 }
+
+
+
+
+// let textBrand = document.createTextNode(res.data.results[0].patient.drug[0].medicinalproduct ? res.data.results[0].patient.drug[0].medicinalproduct : "no data" );
+//     brand.appendChild(textBrand);
